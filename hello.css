@@ -219,6 +219,158 @@
   height: 100vh;
   
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: #fffdfd;
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  
+  footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave1.png);
+    background-size: 1000px 100px;
+  
+  }
+  
+  footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+  }
+  footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+  }
+  footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15;
+    animation: animatewave 3s linear infinite;
+  }
+  footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 3s l
+    
+  }
+  
+  
+  
+  @keyframes animatewave {
+    0% {
+        background-position-x: 1000px;
+    }
+  
+    100% {
+        background-position-x: 0px;
+    }
+  
+  }
+  @keyframes animatewave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+  
+    100% {
+        background-position-x: 1000px;
+    }
+  
+  }
+  
+  footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    background: #000000;
+    height: 64px;
+  
+  }
+  
+  .footer-social a{
+    text-decoration: none;
+    padding: 10px;
+    background:rgb(0, 0, 0);
+    margin: 10px;
+    border-radius:60% ;
+    width: 34px;
+  
+  }
+  
+  .footer-social a i{
+    font-size: 1em;
+    color: rgb(255, 251, 251);
+    opacity: 0.9;
+  
+  }
+  
+  
+  .footer-social a:hover{
+    color: #fefeff;
+    transition: 0.5s;
+  }
+  
+  .footer-social a:hover i{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  
+  .footer-info{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    width: 100% ;
+  
+  }
+  
+  .footer-info p{
+    color: white;
+    font-size: 0.6rem;
+    opacity: 1.9;
+    margin: 0px 5px;
+    letter-spacing: 0.5px;
+    font-weight:400 ;
+    
+  }
+  
+  
+  
   
   
 
