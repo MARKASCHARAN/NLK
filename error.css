@@ -1,0 +1,52 @@
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+  }
+  .btn{
+    background-color:transparent    ;
+    text-decoration: white;
+    
+  }
+  .explore-link:hover {
+    background-color: #a0c5d5; /* Darken background color on hover */
+    color: #fff; /* Change text color to white on hover */
+    border-color: white;
+    color: #142c48;
+  
+    
+  }
+
+  .content{
+    text-align:center ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid #605757;
+    padding: 14px 70px;
+    border-radius: 10px; 
+    margin-top: 20px;
+    
+  }  
+
+  @media only screen and (max-width: 630px){
+    .content h1{
+      font-size: 80px;
+    }
+  
+  }
+
+  
