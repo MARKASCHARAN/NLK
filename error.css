@@ -1,15 +1,19 @@
 
 .centered {
     position: absolute;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
+  
   .container {
     position: relative;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #b3d2ed;
     margin: 0px;
+    background: linear-gradient(to right,  #0C0404,#120321);
   }
   .btn{
     background-color:transparent    ;
@@ -17,10 +21,10 @@
     
   }
   .explore-link:hover {
-    background-color: #a0c5d5; /* Darken background color on hover */
+    background-color: #000000; /* Darken background color on hover */
     color: #fff; /* Change text color to white on hover */
     border-color: white;
-    color: #142c48;
+    color: #b3d2ed;
   
     
   }
@@ -35,7 +39,7 @@
     display: inline-block;
     color: #ffffff;
     font-size: 24px;
-    border: 2px solid #605757;
+    border: 2px solid #000000;
     padding: 14px 70px;
     border-radius: 10px; 
     margin-top: 20px;
@@ -49,4 +53,100 @@
   
   }
 
+  .btn {
+    margin-top: 2.5rem;
+    padding: 0.75rem 1.5rem; 
+    background-color: #000000; 
+    color:#b3d2ed;
+    border: none;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+  }
+
+
+
+.contact-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0c0c0d;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 500;
+  }
   
+  .btn {
+    line-height: 1.8rem;
+    border-radius: 9.5px;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    position: relative;
+    background-color: #000000;
+    color: #000000;
+    transition: background-color 0.2s ease-in-out;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer; /* Not included according to website */
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+      to right,
+      rgb(0, 220, 130),
+      rgb(54, 228, 218),
+      rgb(7, 89, 84)
+    );
+    inset: -2px;
+    z-index: -1;
+    border-radius: 12.5px;
+    transition: all 0.2s ease 0s;
+  }
+  
+  .btn:hover:before {
+    box-shadow: rgba(0, 220, 130, 0.5) 0px 0px 10px 0px,
+      rgba(54, 228, 218, 0.5) 0px 0px 20px 0px;
+  }
+  
+  .btn > span {
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+  }
+  
+  .h1{
+    font-weight: bold;
+    color: #b3d2ed; 
+    margin-bottom: 1rem; 
+  }
+  a{
+    text-decoration: none;
+    color: #b3d2ed;
+  }
+
+  .fade-in-element {
+    opacity: 0; /* Make the element invisible initially */
+    animation: fadeIn 2s forwards; /* Apply the fadeIn animation */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Make the element fully visible */
+    }
+  }

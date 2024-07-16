@@ -5,11 +5,6 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  /*.backs {
-    background:linear-gradient(to right,#000000,  #0e333f);
-   
-  }*/
 
   
   .contact-section {
@@ -80,18 +75,9 @@ body {
 }
 
 .input:focus, .textarea:focus {
-    border-color: #8a4949; /
+    border-color: #000000; /
 }
 
-.btn {
-    margin-top: 2.5rem;
-    padding: 0.75rem 1.5rem; 
-    background-color: #000000; 
-    color:#b3d2ed;
-    border: none;
-    border-radius: 0.5rem; 
-    cursor: pointer;
-}
 
 
 @keyframes fadeIn {

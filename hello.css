@@ -1,39 +1,49 @@
-/* Normalize reset styles across browsers */
+                               /* Normalize reset styles across browsers */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   }
-  
+
   html, body {
     height:100%;
   }
-  /* Set base font styles */
+
   body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: linear-gradient(to right, #000000,#0e333f);
-
+    background: linear-gradient(to right, #0C0404,#120321);
   }
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: #fffdfd;
+  }
+  
 
+                                         /*  Navigation Bar */
 
-
-  /*  Navigation Bar */
   .nav1 {
-    
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    background: linear-gradient(to right, #000000,#0e333f);
+    background: linear-gradient(to right,  #0C0404,#120321);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.0;
-
     position: fixed;  top: 0; width: 100% ;/* Fix the navbar to the top of the page */
     z-index: 1000; /* Fix the navbar to the top of the page */
-
     margin-left: 0%;
   }
 
@@ -53,7 +63,6 @@
    list-style: none;
   }
   
- 
   .nav1 ul li a {
     text-decoration: none;
     color: #232121; 
@@ -69,13 +78,11 @@
     font-weight: 500
   }
   
-  
   .nav1 ul li a:hover {
     color: #000000; 
   }
 
   .nav1 ul li a .icon{
-
     position: relative;
     display: block;
     line-height: 75px;
@@ -110,11 +117,17 @@
 
 
 
-/* Style the logo */
+                                           
+                                              /* Style the logo */
+
 .logo {
   max-width: 100px; /* Limit the maximum width of the logo */
   margin-left: 0px; /* Add some left margin to the logo */
 }
+
+
+
+                                      /*Style for the seafood and Explore*/
 
 .container{
   width: 100%;
@@ -125,11 +138,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
-
 }
-  
-
-/*Style for the seafood and Explore*/
 
 .content{
   text-align:center ;
@@ -144,73 +153,65 @@
   transition: 0.3s;
 }
 
-
 @media only screen and (max-width: 630px){
   .content h1{
     font-size: 80px;
   }
-
 }
   
-
 .content h1:hover{
   -webkit-text-stroke: 2px #fff;
   color: transparent;
 }
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 .content a{
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
   font-size: 24px;
-  border: 2px solid #605757;
+  border: 2px solid #ffffff;
   padding: 14px 70px;
   border-radius: 10px; 
   margin-top: 20px;
-  
+  font-family: Rajdhani;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
-/* Hover effect for explore-link class */
 .explore-link:hover {
-  background-color: #a0c5d5; /* Darken background color on hover */
-  color: #fff; /* Change text color to white on hover */
-  border-color: white;
-  color: #142c48;
-
-  
+  background-color: #ffffff; /* Darken background color on hover */
+  color:black; /* Change text color to white on hover */
+  border-color: rgb(0, 0, 0);
 }
-/*Back video*/
 
+
+
+                                                 /*Back video*/
 
 .back-video{
   position: absolute;
   right: 0;
   bottom: 0;
-  filter: brightness(300%);
+  filter: brightness(100%);
   min-width: 100%;
   overflow: hidden;
   z-index:-1;
   width: 40%;
   margin-bottom: 1%
-
 }
 
-
-@media (min-aspect-ratio:16/9){
-  .back-video{
-    width: 100%;
-    height: auto;
-  }
+.back-video {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
-@media (max-aspect-ratio:16/9){
-  .back-video{
-    width: auto;
-    height: 100%;
-  }
+.fade-out {
+  opacity: 0;
 }
-
 
 .container2{
   display: flex;
@@ -220,25 +221,18 @@
   background-color: #ffffff;
   margin-top: 0;
   height: 100vh;
-  background: linear-gradient(to right, #000000,  #0e333f); 
-  
-  }
+  background: linear-gradient(to right, #000000,  #120321); 
+ }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media only screen and (max-width: 768px) {
+  .back-video {
+    width: 100%;
   }
-  
-  .main {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
-    background: #fffdfd;
-  }
-  
+}
+
+                                                              /*FOOTER*/
+
+
   footer {
     position: relative;
     width: 100%;
@@ -248,7 +242,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
   }
   
   
@@ -260,7 +253,6 @@
     height: 100px;
     background: url(imgs/wave1.png);
     background-size: 1000px 100px;
-  
   }
   
   footer .wave#wave1 {
@@ -269,18 +261,21 @@
     bottom: 0;
     animation: animatewave 4s linear infinite;
   }
+
   footer .wave#wave2 {
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
     animation: animatewave_02 4s linear infinite;
   }
+
   footer .wave#wave3 {
     z-index: 1000;
     opacity: 0.2;
     bottom: 15;
     animation: animatewave 3s linear infinite;
   }
+
   footer .wave#wave4 {
     z-index: 999;
     opacity: 0.7;
@@ -289,27 +284,22 @@
     
   }
   
-  
-  
   @keyframes animatewave {
     0% {
         background-position-x: 1000px;
     }
-  
     100% {
         background-position-x: 0px;
     }
-  
   }
+
   @keyframes animatewave_02 {
     0% {
         background-position-x: 0px;
     }
-  
     100% {
         background-position-x: 1000px;
     }
-  
   }
   
   footer p {
@@ -324,7 +314,6 @@
     width: 100%; 
     background: #000000;
     height: 64px;
-  
   }
   
   .footer-social a{
@@ -334,16 +323,13 @@
     margin: 10px;
     border-radius:60% ;
     width: 34px;
-  
   }
   
   .footer-social a i{
     font-size: 1em;
     color: rgb(255, 251, 251);
     opacity: 0.9;
-  
   }
-  
   
   .footer-social a:hover{
     color: #fefeff;
@@ -370,36 +356,14 @@
     margin: 0px 5px;
     letter-spacing: 0.5px;
     font-weight:400 ;
-    
   }
-  
-  
-  
-  
-  
+
 .footer-social{
-  background: linear-gradient(to right, #000000,  #0e333f);
+  background: linear-gradient(to right, #000000,  #120321);
 }
 
 .footer-info{
-  background: linear-gradient(to right, #000000,#0e333f);
+  background: linear-gradient(to right, #000000,#120321);
 }
 
-.back-video{
-  filter: brightness(100%);
-}
-
-
-.back-video {
-  
-  width: 100%;
-  height: auto;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-.fade-out {
-  opacity: 0;
-
-
-}
 
