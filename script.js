@@ -37,3 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
     videoPlayer.src = videos[currentVideoIndex]; // Start the first video
     videoPlayer.play();
 });
+
+

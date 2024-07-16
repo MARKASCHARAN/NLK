@@ -7,14 +7,13 @@ body {
     height: 100vh;
     margin: 0rem;
     overflow: hidden;
-    background: linear-gradient(to right, #fefefe, #999588);
+    background: linear-gradient(to right,  #0C0404,#120321);
   }
   
   .line {
     background-color: transparent;
-    color: inherit;
+    color: white;
     -webkit-text-decoration: none;
-    text-decoration: none;
     cursor: pointer;
     display: inline-block;
     font-size: 30px;
