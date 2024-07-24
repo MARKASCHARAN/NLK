@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0rem;
     overflow: hidden;
-    background: linear-gradient(to right,  #0C0404,#120321);
+    background:black;
   }
   
   .line {

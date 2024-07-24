@@ -13,7 +13,7 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: linear-gradient(to right, #0C0404,#120321);
+    background: linear-gradient(to right, #fafafa,#a2a8d3);
   }
 
   * {
@@ -38,7 +38,8 @@
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    background: linear-gradient(to right,  #0C0404,#120321);
+    background: #3d4b703a;
+            backdrop-filter: blur(2px);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.0;
@@ -148,7 +149,7 @@
 
 .content h1{
   font-size: 160px;
-  color: #ffffff;
+  color: #f0fbff;
   font-weight:600;
   transition: 0.3s;
 }
@@ -168,7 +169,7 @@
 .content a{
   text-decoration: none;
   display: inline-block;
-  color: #ffffff;
+  color: #f0fbff;
   font-size: 24px;
   border: 2px solid #ffffff;
   padding: 14px 70px;
@@ -221,7 +222,7 @@
   background-color: #ffffff;
   margin-top: 0;
   height: 100vh;
-  background: linear-gradient(to right, #000000,  #120321); 
+  background: linear-gradient(to right,    #fafafa,#a2a8d3); 
  }
 
 @media only screen and (max-width: 768px) {
@@ -312,7 +313,7 @@
     display: flex;
     justify-content: center;
     width: 100%; 
-    background: #000000;
+    background: #2b4353;
     height: 64px;
   }
   
@@ -342,7 +343,7 @@
   }
   
   .footer-info{
-    background-color: #000000;
+    background-color: #2b4353;
     padding: 20px;
     text-align: center;
     width: 100% ;
@@ -350,7 +351,7 @@
   }
   
   .footer-info p{
-    color: white;
+    color: #ffffff;
     font-size: 0.6rem;
     opacity: 1.9;
     margin: 0px 5px;
@@ -359,11 +360,30 @@
   }
 
 .footer-social{
-  background: linear-gradient(to right, #000000,  #120321);
+  background: linear-gradient(to right, #2b4353,#1a2639);
 }
 
 .footer-info{
-  background: linear-gradient(to right, #000000,#120321);
+  background: linear-gradient(to right, #2b4353,#1a2639);
 }
 
 
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@keyframes rainbow {
+  0% { color: #5585b5; }
+  14% { color: #3baea0}
+  28% { color: #0e2431 }
+  42% { color: green; }
+  57% { color: #fc3a52}
+  
+}
+
+.rainbow-text {
+  font-weight:lighter;
+  font-size: qem;
+  animation: rainbow 5s infinite;
+}
