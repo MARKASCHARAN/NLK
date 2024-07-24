@@ -29,14 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         videoPlayer.src = videos[currentVideoIndex];
         videoPlayer.classList.remove('fade-out');
-        videoPlayer.addEventListener('canplay', function() {
-            videoPlayer.play();
-        }, { once: true });
+        videoPlayer.load(); // Reload the video source
+        videoPlayer.play().catch(error => {
+            console.error('Error playing video:', error);
+        });
     }
 
     videoPlayer.src = videos[currentVideoIndex]; // Start the first video
-    videoPlayer.addEventListener('canplay', function() {
-        videoPlayer.play();
-    }, { once: true });
+    videoPlayer.load(); // Ensure the video is loaded
+    videoPlayer.play().catch(error => {
+        console.error('Error playing video:', error);
+    });
 });
 
+
+videoPlayer.addEventListener('error', function(event) {
+    console.error('Error loading video:', event);
+});

@@ -402,8 +402,8 @@ a{
   }
   .nav1 ul {
     list-style-type: none; 
-    display: flex;
-    width: 200px;
+   
+    width: 210px;
   }
   
 }
